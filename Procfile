@@ -1,1 +1,1 @@
-web: gunicorn abismo.wsgi --log-file -
+web: gunicorn abismo.wsgi:application --log-file -
