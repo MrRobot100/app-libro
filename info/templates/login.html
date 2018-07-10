@@ -2,6 +2,17 @@
 <html>
 <head>
 </head>
+<style>
+{% load static %}
+body{
+  background-image: url("{% static 'tutorial.jpg' %}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+
+}
+</style>
 <body>
 
 {% if form.errors %}
