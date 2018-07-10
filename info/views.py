@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import Correo
 from .models import *
+from django.contrib.auth.decorators import login_required
 
 def inicio(request):
 
@@ -29,6 +30,7 @@ def inicio(request):
     }
     return render(request, 'inicio.html', respuesta)
 
+@login_required(login_url='/accounts/login/')
 def about(request):
     respuesta={'about':'no hay información adicional'}
     try:
