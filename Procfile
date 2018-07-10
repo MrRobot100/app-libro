@@ -1,1 +1,1 @@
-web: gunicorn abismo.wsgi:application --log-file -
+web: gunicorn libro.wsgi:application --log-file -
