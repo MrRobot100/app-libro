@@ -2,47 +2,39 @@
 <html>
 <head>
 </head>
-<style>
-{% load static %}
-body{
-  background-image: url("{% static 'tutorial.jpg' %}");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
 
-}
-</style>
-<body>
-
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
-
-{% if next %}
-    {% if user.is_authenticated %}
-    <p>Your account doesn't have access to this page. To proceed,
-    please login with an account that has access.</p>
-    {% else %}
-    <p>Please login to see this page.</p>
+<body style="background-color:white; padding-top:200px;">
+  <div align='center'>
+    {% if form.errors %}
+    <p><font color="red">Usuario y contraseña incorrecta</font></p>
     {% endif %}
-{% endif %}
+    <table style="background-color:rgba(0, 0, 0, 0.5);"><tr><td align="center">
 
-<form method="post" action="{% url 'login' %}">
-{% csrf_token %}
-<table>
-<tr>
-    <td>{{ form.username.label_tag }}</td>
-    <td>{{ form.username }}</td>
-</tr>
-<tr>
-    <td>{{ form.password.label_tag }}</td>
-    <td>{{ form.password }}</td>
-</tr>
-</table>
+  {% if next %}
+      {% if user.is_authenticated %}
+      <p align='center'><font color="red">No te has logeado correctamente</font></p>
+      {% else %}
+      <p align='center'><font color="white">Logeate</font></p>
+      {% endif %}
+  {% endif %}
 
-<input type="submit" value="login" />
-<input type="hidden" name="next" value="{{ next }}" />
-</form>
+  <form method="post" action="{% url 'login' %}">
+  {% csrf_token %}
+  <table align='center'>
+  <tr>
+      <td><font color="white">{{ form.username.label_tag }}</td>
+      <td>{{ form.username }}</font></td>
+  </tr>
+  <tr>
+      <td><font color="white">{{ form.password.label_tag }}</td>
+      <td>{{ form.password }}</font></td>
+  </tr>
+  </table>
 
+  <input type="submit" value="login" align='center'/>
+  <input type="hidden" name="next" value="{{ next }}" />
+  </form>
+</tr></td></table>
+</div>
 </body>
+</html>

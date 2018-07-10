@@ -30,7 +30,6 @@ def inicio(request):
     }
     return render(request, 'inicio.html', respuesta)
 
-@login_required(login_url='/accounts/login/')
 def about(request):
     respuesta={'about':'no hay información adicional'}
     try:
@@ -39,3 +38,10 @@ def about(request):
         return render(request,'about.html', respuesta)
     except:
         return render(request,'about.html', respuesta)
+
+#@login_required(login_url='/accounts/login/')
+#def tutorial(request):
+
+    #tutorial aqui
+
+#    return render(request,'tutorial.html',respuesta)
