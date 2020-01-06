@@ -3,7 +3,7 @@ Desarrollo de una aplicación que permite la promoción de una novela , con Regi
 La aplicación cuenta con una landing page basica donde se muestran las actualizaciones que el autor (escribe) en el panel Admin,
 el modelo de las actualizaciones comprende un campo de texto y uno de fecha. En la casilla principal se mostraran las actualizaciones 
 ordenadas de la siguiente manera: la ultima va siempre de primero y hacia abajo las que le anteceden.
-<img src="https://raw.githubusercontent.com/MrRobot100/app-libro/master/demo/demo3.png" width="10">
+<img src="https://raw.githubusercontent.com/MrRobot100/app-libro/master/demo/demo3.png" width="100">
 ![alt text | width=1px](https://raw.githubusercontent.com/MrRobot100/app-libro/master/demo/demo3.png)
 
 
