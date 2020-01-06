@@ -4,7 +4,7 @@ La aplicación cuenta con una landing page basica donde se muestran las actualiz
 el modelo de las actualizaciones comprende un campo de texto y uno de fecha. En la casilla principal se mostraran las actualizaciones 
 ordenadas de la siguiente manera: la ultima va siempre de primero y hacia abajo las que le anteceden.
 
-![alt text](https://raw.githubusercontent.com/MrRobot100/app-libro/master/demo/demo3.png | width=100px)
+![alt text | width=100px](https://raw.githubusercontent.com/MrRobot100/app-libro/master/demo/demo3.png)
 
 
 Es posible registrarse para que el autor tenga a su disposicion los correos de las personas interesadas en recibir una copia del libro
