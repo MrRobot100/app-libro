@@ -1,0 +1,100 @@
+#main{
+  
+  width:600px;
+  height:600px;
+  background-color:rgba(0, 0, 0, 0.3);
+  position:relative;
+  margin-left:-295px; 
+  margin-top:-450px;  
+  top:50%;
+  left:50%;
+
+}
+
+#main2{
+  width:1000px;
+  height:1000px;
+  background-color:rgba(0, 0, 0, 0);
+  position:fixed;
+  margin-left:-1050px; 
+  margin-top:-600px; 
+  top:50%;
+  left:50%;
+}
+
+#title{
+
+  font-family: 'Bungee Shade', cursive;
+  font-size: 50px;
+  color: white;
+  padding-top:200px;
+
+}
+
+#forms{
+
+  width:700px;
+  height:70px;
+  background-color:rgba(0, 0, 0, 0.2);
+  position:relative;
+  margin-left:-350px; 
+  margin-top:-35px;  
+  top:55%;
+  left:50%;
+
+}
+
+#forms_succes{
+
+  width:700px;
+  height:70px;
+  background-color:rgba(0, 255, 127, 0.2);
+  position:relative;
+  margin-left:-350px; 
+  margin-top:-35px;  
+  top:55%;
+  left:50%;
+}
+
+.correo{
+
+  background-color:rgba(0, 0, 0, 0.7);
+  border-radius: 0; 
+  border: transparent; 
+  color: #fff; 
+  height: 20px; 
+  width: 150px; 
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+
+ }
+
+ .correo2{
+
+  background-color:rgba(0, 0, 0, 0.7);
+  border-radius: 0; 
+  border: transparent; 
+  color: #fff; 
+  height: 20px; 
+  width: 80px; 
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+}
+
+ body{
+
+  background-image: url("{% static 'info/about2.jpg' %}");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+
+ }
+
+ #desc{
+
+  font-family: sans-serif;
+  font-size: 15px;
+
+ }

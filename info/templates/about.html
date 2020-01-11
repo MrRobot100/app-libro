@@ -1,120 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-</head>
-{% load static %}
-<style type="text/css">
-  #main{
-    width:600px;
-    height:600px;
-    background-color:rgba(0, 0, 0, 0.3);
-    position:relative;
-    margin-left:-295px; /* half of width */
-    margin-top:-450px;  /* half of height */
-    top:50%;
-    left:50%;
-
-}
-
-#main2{
-  width:1000px;
-  height:1000px;
-  background-color:rgba(0, 0, 0, 0);
-  position:fixed;
-  margin-left:-1050px; /* half of width */
-  margin-top:-600px;  /* half of height */
-  top:50%;
-  left:50%;
-}
-
-#title{
-  font-family: 'Bungee Shade', cursive;
-  font-size: 50px;
-  color: white;
-  padding-top:200px;
-
-}
-
-  #forms{
-    width:700px;
-    height:70px;
-    background-color:rgba(0, 0, 0, 0.2);
-    position:relative;
-    margin-left:-350px; /* half of width */
-    margin-top:-35px;  /* half of height */
-    top:55%;
-    left:50%;
-  }
-
-#forms_succes{
-  width:700px;
-  height:70px;
-  background-color:rgba(0, 255, 127, 0.2);
-  position:relative;
-  margin-left:-350px; /* half of width */
-  margin-top:-35px;  /* half of height */
-  top:55%;
-  left:50%;
-}
-
-
-.correo{
-    background-color:rgba(0, 0, 0, 0.7);
-    border-radius: 0; /* Remove corner curve */
-    border: transparent; /* 2px white border */
-    color: #fff; /* White text */
-    height: 20px; /* Increase input height */
-    width: 150px; /* Increase input height */
-    font-family: 'Hind', sans-serif;
-    font-size: 15px;
- }
-
- .correo2{
-     background-color:rgba(0, 0, 0, 0.7);
-     border-radius: 0; /* Remove corner curve */
-     border: transparent; /* 2px white border */
-     color: #fff; /* White text */
-     height: 20px; /* Increase input height */
-     width: 80px; /* Increase input height */
-     font-family: 'Hind', sans-serif;
-     font-size: 15px;
-  }
- body{
-   background-image: url("{% static 'about2.jpg' %}");
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover;
-   background-color: black;
- }
-</style>
-
-<!--{% load static %}
-<body id="image" background='{% static 'fondo2.jpg' %}'>
-url("{% static 'fondo2.jpg' %}");
--->
+  <head>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link href="{% static 'info/css/styles.css' %}" rel="stylesheet">
+  </head>
 <body>
-
-
-  <body>
   <div id="main2">
     <div id="title" align="center">About</font></div>
-    <div id="main">
-
-      <table>
-        <tr>
-          <td align='justify'>
-              <font color='white' style="font-family: 'Hind', sans-serif;sans-serif; font-size: 15px;">{{ about }}</font></br></br>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-
+      <div id="main">
+        <table>
+          <tr>
+            <td align='justify'>
+                <font id='desc' color='white'>{{ about }}</font></br></br>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
-
+</body>
 </html>
