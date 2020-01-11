@@ -1,0 +1,84 @@
+<style type="text/css">
+  #main{
+    width:700px;
+    height:250px;
+    background-color:rgba(0, 0, 0, 0.7);
+    position:relative;
+    margin-left:-350px; /* half of width */
+    margin-top:-460px;  /* half of height */
+    top:50%;
+    left:50%;
+    overflow-y: scroll;
+}
+
+#main2{
+  width:1000px;
+  height:1000px;
+  background-color:rgba(0, 0, 0, 0);
+  position:fixed;
+  margin-left:-500px; /* half of width */
+  margin-top:-600px;  /* half of height */
+  top:50%;
+  left:50%;
+}
+
+#title{
+  font-family: 'Monoton', cursive;
+  font-size: 90px;
+  color: red;
+  padding-top:330px;
+
+}
+
+  #forms{
+    width:700px;
+    height:70px;
+    background-color:rgba(0, 0, 0, 0.5);
+    position:relative;
+    margin-left:-350px; /* half of width */
+    margin-top:-35px;  /* half of height */
+    top:55%;
+    left:50%;
+  }
+
+#forms_succes{
+  width:700px;
+  height:70px;
+  background-color:rgba(0, 255, 127, 0.2);
+  position:relative;
+  margin-left:-350px; /* half of width */
+  margin-top:-35px;  /* half of height */
+  top:55%;
+  left:50%;
+}
+
+
+.correo{
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 0; /* Remove corner curve */
+    border: transparent; /* 2px white border */
+    color: #fff; /* White text */
+    height: 20px; /* Increase input height */
+    width: 150px; /* Increase input height */
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+ }
+
+ .correo2{
+     background-color:rgba(0, 0, 0, 0.7);
+     border-radius: 0; /* Remove corner curve */
+     border: transparent; /* 2px white border */
+     color: #fff; /* White text */
+     height: 20px; /* Increase input height */
+     width: 80px; /* Increase input height */
+     font-family: 'Hind', sans-serif;
+     font-size: 15px;
+  }
+
+  .title3{
+    
+        color: white;
+        font-family: sans-serif;
+        font-size: 15px;
+      
+       }
